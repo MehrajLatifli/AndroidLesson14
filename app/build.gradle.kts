@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.androidlesson14"
+    namespace = "com.example.dummyJSON_Recipes"
     compileSdk = 34
 
     buildFeatures {
@@ -22,7 +22,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.androidlesson14"
+        applicationId = "com.example.dummyJSON_Recipes"
         minSdk = 33
         targetSdk = 34
         versionCode = 1
@@ -56,7 +56,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-   // testImplementation(libs.junit)
+    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 

@@ -1,4 +1,4 @@
-package com.example.androidlesson14.api
+package com.example.dummyJSON_Recipes.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

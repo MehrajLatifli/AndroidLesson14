@@ -1,7 +1,7 @@
-package com.example.androidlesson14.api
+package com.example.dummyJSON_Recipes.api
 
-import com.example.androidlesson14.models.Recipe
-import com.example.androidlesson14.models.RecipeResponse
+import com.example.dummyJSON_Recipes.models.Recipe
+import com.example.dummyJSON_Recipes.models.RecipeResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

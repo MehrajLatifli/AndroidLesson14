@@ -1,4 +1,4 @@
-package com.example.androidlesson14.models
+package com.example.dummyJSON_Recipes.models
 
 
 import com.google.gson.annotations.SerializedName

@@ -1,12 +1,12 @@
-package com.example.androidlesson14.activities
+package com.example.dummyJSON_Recipes.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.androidlesson14.R
-import com.example.androidlesson14.databinding.ActivityMainBinding
+import com.example.dummyJSON_Recipes.R
+import com.example.dummyJSON_Recipes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

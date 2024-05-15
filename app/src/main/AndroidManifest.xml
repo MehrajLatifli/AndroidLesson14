@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AndroidLesson14"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.example.dummyJSON_Recipes.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

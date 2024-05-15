@@ -1,9 +1,9 @@
-package com.example.androidlesson14.adapters
+package com.example.dummyJSON_Recipes.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidlesson14.databinding.ItemIngredientBinding
+import com.example.dummyJSON_Recipes.databinding.ItemIngredientBinding
 
 class IngredientAdapter : RecyclerView.Adapter<IngredientAdapter.IngredientViewHolder>() {
 

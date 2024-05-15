@@ -1,4 +1,4 @@
-package com.example.androidlesson14
+package com.example.dummyJSON_Recipes
 
 import org.junit.Test
 

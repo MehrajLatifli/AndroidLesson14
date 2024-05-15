@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidLesson14"
+rootProject.name = "DummyJSON Recipes"
 include(":app")

@@ -1,4 +1,4 @@
-package com.example.androidlesson14.fragments
+package com.example.dummyJSON_Recipes.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -8,12 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidlesson14.adapters.IngredientAdapter
-import com.example.androidlesson14.adapters.InstructionAdapter
-import com.example.androidlesson14.adapters.RecipeAdapter
-import com.example.androidlesson14.api.ApiUtils
-import com.example.androidlesson14.databinding.FragmentDetailBinding
-import com.example.androidlesson14.models.Recipe
+import com.example.dummyJSON_Recipes.adapters.IngredientAdapter
+import com.example.dummyJSON_Recipes.adapters.InstructionAdapter
+import com.example.dummyJSON_Recipes.adapters.RecipeAdapter
+import com.example.dummyJSON_Recipes.api.ApiUtils
+import com.example.dummyJSON_Recipes.databinding.FragmentDetailBinding
+import com.example.dummyJSON_Recipes.models.Recipe
 import com.squareup.picasso.MemoryPolicy
 import com.squareup.picasso.Picasso
 import retrofit2.Call
@@ -26,7 +26,7 @@ class DetailFragment : Fragment() {
     private val api = ApiUtils.createApi()
     private val recipeAdapter = RecipeAdapter()
     private val ingredientAdapter = IngredientAdapter()
-    private val instructionAdapter=InstructionAdapter()
+    private val instructionAdapter= InstructionAdapter()
     private val args: DetailFragmentArgs by navArgs()
 
     override fun onCreateView(

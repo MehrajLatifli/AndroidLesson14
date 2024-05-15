@@ -1,4 +1,4 @@
-package com.example.androidlesson14.fragments
+package com.example.dummyJSON_Recipes.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -9,12 +9,12 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidlesson14.R
-import com.example.androidlesson14.adapters.RecipeAdapter
-import com.example.androidlesson14.api.ApiUtils
-import com.example.androidlesson14.databinding.FragmentHomeBinding
-import com.example.androidlesson14.models.Recipe
-import com.example.androidlesson14.models.RecipeResponse
+import com.example.dummyJSON_Recipes.R
+import com.example.dummyJSON_Recipes.adapters.RecipeAdapter
+import com.example.dummyJSON_Recipes.api.ApiUtils
+import com.example.dummyJSON_Recipes.databinding.FragmentHomeBinding
+import com.example.dummyJSON_Recipes.models.Recipe
+import com.example.dummyJSON_Recipes.models.RecipeResponse
 import com.google.android.gms.common.api.Response
 import retrofit2.Call
 import retrofit2.Callback

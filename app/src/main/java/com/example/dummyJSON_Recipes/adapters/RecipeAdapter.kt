@@ -1,12 +1,12 @@
-package com.example.androidlesson14.adapters
+package com.example.dummyJSON_Recipes.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidlesson14.R
-import com.example.androidlesson14.databinding.ItemRecipeBinding
-import com.example.androidlesson14.models.Recipe
+import com.example.dummyJSON_Recipes.R
+import com.example.dummyJSON_Recipes.databinding.ItemRecipeBinding
+import com.example.dummyJSON_Recipes.models.Recipe
 import com.squareup.picasso.MemoryPolicy
 import com.squareup.picasso.Picasso
 
