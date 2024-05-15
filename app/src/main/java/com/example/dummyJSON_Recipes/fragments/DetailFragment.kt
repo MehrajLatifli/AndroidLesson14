@@ -14,6 +14,9 @@ import com.example.dummyJSON_Recipes.adapters.RecipeAdapter
 import com.example.dummyJSON_Recipes.api.ApiUtils
 import com.example.dummyJSON_Recipes.databinding.FragmentDetailBinding
 import com.example.dummyJSON_Recipes.models.Recipe
+import com.example.dummyJSON_Recipes.utils.gone
+import com.example.dummyJSON_Recipes.utils.loadUrl
+import com.example.dummyJSON_Recipes.utils.visible
 import com.squareup.picasso.MemoryPolicy
 import com.squareup.picasso.Picasso
 import retrofit2.Call
@@ -41,7 +44,7 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.progressBar.visibility=View.GONE
+        binding.progressBar.gone()
 
         val id = args.id
 
@@ -63,11 +66,14 @@ class DetailFragment : Fragment() {
 
     private fun getRecipeById(id: String) {
 
-        binding.progressBar.visibility=View.VISIBLE
+        binding.progressBar.visible()
 
         api.getRecipeById(id.toString()).enqueue(object : Callback<Recipe> {
             override fun onFailure(call: Call<Recipe>, t: Throwable) {
-                binding.progressBar.visibility=View.GONE
+
+
+                binding.progressBar.gone()
+
                 Log.e("API Call", "Failed to fetch recipes: ${t.message}")
             }
 
@@ -76,12 +82,18 @@ class DetailFragment : Fragment() {
                     val recipeResponse = response.body()
                     recipeResponse?.let {
 
-                        binding.progressBar.visibility=View.GONE
 
-                        Picasso.get()
+
+                        binding.progressBar.gone()
+
+                      /*  Picasso.get()
                             .load(it.image)
                             .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
                             .into(binding.imageView)
+
+                       */
+
+                        binding.imageView.loadUrl(it.image)
 
 
                         binding.textView.text = it.name

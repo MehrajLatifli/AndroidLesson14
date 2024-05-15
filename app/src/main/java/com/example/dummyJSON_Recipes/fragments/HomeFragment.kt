@@ -15,6 +15,8 @@ import com.example.dummyJSON_Recipes.api.ApiUtils
 import com.example.dummyJSON_Recipes.databinding.FragmentHomeBinding
 import com.example.dummyJSON_Recipes.models.Recipe
 import com.example.dummyJSON_Recipes.models.RecipeResponse
+import com.example.dummyJSON_Recipes.utils.gone
+import com.example.dummyJSON_Recipes.utils.visible
 import com.google.android.gms.common.api.Response
 import retrofit2.Call
 import retrofit2.Callback
@@ -44,9 +46,9 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.progressBar.visibility=View.GONE
 
 
+        binding.progressBar.gone()
 
         val horizontalLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         binding.recycleViewHome.layoutManager = horizontalLayoutManager
@@ -80,13 +82,14 @@ class HomeFragment : Fragment() {
 
     private fun getRecipe() {
 
-        binding.progressBar.visibility=View.VISIBLE
+
+        binding.progressBar.visible()
 
         api.getRecipe().enqueue(object : Callback<RecipeResponse> {
 
             override fun onFailure(call: Call<RecipeResponse>, t: Throwable) {
 
-                binding.progressBar.visibility=View.GONE
+                binding.progressBar.gone()
                 Log.e("API Call", "Failed to fetch recipes: ${t.message}")
 
             }

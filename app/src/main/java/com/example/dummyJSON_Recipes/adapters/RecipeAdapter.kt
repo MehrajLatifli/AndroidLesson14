@@ -35,10 +35,13 @@ class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.UserViewHolder>() {
 
         holder.itemRecipeBinding.recipe =item
 
-        Picasso.get()
+      /*  Picasso.get()
             .load(item.image)
             .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
             .into(holder.itemRecipeBinding.imageView)
+
+       */
+
 
 
        /* val slideAnimation = AnimationUtils.loadAnimation(holder.itemRecipeBinding.root.context, com.google.android.material.R.anim.m3_side_sheet_enter_from_left)
