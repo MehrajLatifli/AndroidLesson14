@@ -7,7 +7,7 @@ DummyJSON
 navigation
 <br/>
 viewBinding
-<br/>        
+<br/>
 dataBinding
 <br/>
 gson
