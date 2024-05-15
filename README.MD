@@ -12,6 +12,12 @@ dataBinding
 <br/>
 gson
 <br/>
+BindingAdapter
+<br/>
+extensions
+<br/>
+glide
+<br/>
 <br/>
 
 
